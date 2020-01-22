@@ -76,9 +76,10 @@ def extract_seconds(unit_str):
     supported_units = {
             "seconds" : 1,
             "secs": 1,
+            "sec": 1,
             "s": 1,
             "mins": 60,
-            "minutes"
+            "minutes" : 60,
             "min": 60,
             "m": 60,
             "hours": 60*60,
