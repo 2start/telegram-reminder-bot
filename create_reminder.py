@@ -38,7 +38,7 @@ def remind_me():
     response_msg = "I will remind you at " + time.ctime(epoch_remind_time) + "."
     response = { "chat_id" : chat_id, "text" : response_msg }
     headers = {'content-type': 'application/json'}
-    url = "https://api.telegram.org/bot911585183:AAG0nkfnWgVdTuPLuANOzpF93-EBVHLjKSo/sendMessage"
+    url = "https://api.telegram.org/bot911585183:{{ TOKEN }}/sendMessage"
     requests.post(url, data=json.dumps(response), headers=headers)
     return 'OK'
     
